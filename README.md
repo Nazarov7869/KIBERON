@@ -1,51 +1,62 @@
-# KIBERON
 <div align="center">
-  <h1>👋 Salom, men [Ismingiz]!</h1>
-  <h3>Python | Mobile Developer | AI bilan ishlashni yaxshi ko'raman</h3>
+  <h1>KIBERON</h1>
+  <h3>👋 Salom, men KIBERON!</h3>
+  <p><strong>Python | Mobile Developer | AI bilan ishlashni yaxshi ko'raman</strong></p>
 </div>
 
 ---
 
-### 📊 **GitHub Statistikam**
+### 📊 GitHub Statistikam
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SIZNING-USERNAME&show_icons=true&theme=dark)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SIZNING-USERNAME&show_icons=true&theme=dark&hide_title=true)](https://github.com/SIZNING-USERNAME)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SIZNING-USERNAME&layout=compact&theme=dark)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SIZNING-USERNAME&layout=compact&theme=dark&hide_title=true)](https://github.com/SIZNING-USERNAME)
 
 ---
 
-### 🚀 Texnologiyalarim
+### 🔥 Texnologiyalarim
+
+<div align="center">
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/Django%20REST-FF1700?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 <img src="https://img.shields.io/badge/Kivy-4A4A4A?style=for-the-badge&logo=kivy&logoColor=white" />
 <img src="https://img.shields.io/badge/Flet-4285F4?style=for-the-badge&logo=flet&logoColor=white" />
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 
----
-
-### 📫 Menga bog‘laning:
-
-<div align="center">
-  <a href="https://t.me/sizningusername">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
-  </a>
-  <a href="https://instagram.com/sizningusername">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-  </a>
-  <a href="https://linkedin.com/in/sizningusername">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
 </div>
 
 ---
 
-### 🔥 Hozirda ustida ishlayotgan loyihalarim:
-- Mobile ilovalar (Python + Flet / Kivy)
-- ...
+### 📫 Bog‘lanish uchun:
+
+<div align="center">
+
+<a href="https://t.me/Nazaroff7869">
+  <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+</a>
+
+<a href="https://instagram.com/nazarov.7869">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+</a>
+
+<a href="https://github.com/SIZNING-USERNAME">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</a>
+
+</div>
+
+---
+
+### 🌟 Hozirda ustida ishlayotganim
+- Mobile ilovalar (Python + Kivy / Flet)
+- Backend loyihalar (Django Rest Framework)
+- AI va avtomatlashtirish
 
 ---
 
 <div align="center">
-  <strong>⭐️ Agar loyihalarim yoqsa, yulduz bosishni unutmang!</strong>
+  <strong>⭐ Loyihalarim yoqsa yulduz bosib qo‘ying!</strong>
 </div>
