@@ -60,10 +60,11 @@ ombor, elchixona va AI yordamchisini bitta CRM ichida boshqarish.
 <p align="center">
 
 <img src="assets/screenshots/mobil-login.jpg" width="180">
-<img src="assets/screenshots/mobil-dash.jpg" width="180">
 <img src="assets/screenshots/mobil-dash-1.jpg" width="180">
 <img src="assets/screenshots/mobil-dash-2.jpg" width="180">
 <img src="assets/screenshots/mobil-dash-3.jpg" width="180">
+<img src="assets/screenshots/mobil-dash-4.jpg" width="180">
+<img src="assets/screenshots/mobil-dash-5.jpg" width="180">
 
 </p>
 
