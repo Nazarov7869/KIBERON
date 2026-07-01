@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="<%= meta.htmlLang %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= meta.title %></title>
+  <meta name="description" content="<%= meta.description %>">
+  <link rel="canonical" href="<%= config.siteUrl %><%= meta.path %>">
+  <meta property="og:title" content="<%= meta.title %>">
+  <meta property="og:description" content="<%= meta.description %>">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="/"><%- include('partials/logo', {sfx:'nav', theme:'light', sub:false}) %></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#how"><%= t.nav_how %></a>
+        <a href="#features"><%= t.nav_features %></a>
+        <a href="#who"><%= t.nav_who %></a>
+        <a href="/calculator"><%= t.nav_calc %></a>
+        <a href="#download"><%= t.nav_download %></a>
+      </div>
+      <div class="nav-right">
+        <div class="langs">
+          <% metaList.forEach(function(m){ %>
+            <a class="lang<%= m.code === lang ? ' active' : '' %>" href="<%= m.path %>">
+              <%- FLAGS[m.flag] %><span class="lb"><%= m.label %></span>
+            </a>
+          <% }); %>
+        </div>
+        <a class="btn btn-primary" href="<%= config.loginUrl %>"><%= t.nav_login %></a>
+        <button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <header class="hero">
+    <div class="tilebg"></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <span class="eyebrow rise"><%= t.hero_eyebrow %></span>
+        <h1><span class="rise d1"><%= t.hero_title_1 %></span> <span class="accent rise d2"><%= t.hero_title_2 %></span></h1>
+        <p class="lead rise d3"><%= t.hero_sub %></p>
+        <div class="hero-cta rise d4">
+          <a class="btn btn-primary btn-lg" href="<%= config.androidUrl %>"><%= t.hero_cta1 %></a>
+          <a class="btn btn-ghost btn-lg" href="<%= config.loginUrl %>"><%= t.hero_cta2 %></a>
+        </div>
+        <div class="trust-line rise d5">
+          <span class="trust-badge"><span class="dot"></span> <%= t.hero_trust %></span>
+        </div>
+      </div>
+
+      <!-- signature: konteyner to'ldirish -->
+      <div class="stage">
+        <svg class="route" viewBox="0 0 460 420" preserveAspectRatio="none">
+          <path d="M20,360 C120,300 160,120 300,90 C380,72 420,60 450,40"></path>
+          <circle cx="20" cy="360" r="5"></circle>
+          <circle cx="450" cy="40" r="5"></circle>
+        </svg>
+        <div class="container-card">
+          <div class="cc-head">
+            <span class="cc-title"><%= t.cc_title %></span>
+            <span class="cc-badge"><%= t.cc_badge %></span>
+          </div>
+          <div class="container-box">
+            <div class="fill-badge"><span class="tick">✓</span> <%= t.cc_full %></div>
+            <div class="seg s1"><%= t.seg1 %></div>
+            <div class="seg s2"><%= t.seg2 %></div>
+            <div class="seg s3"><%= t.seg3 %></div>
+            <div class="seg s4"><%= t.seg4 %></div>
+            <div class="seg s5"><%= t.seg5 %></div>
+          </div>
+          <div class="cc-foot"><span><%= t.cc_producers %></span> <b>20 / 20 t</b></div>
+        </div>
+        <span class="float-chip fc-a"><span class="em" style="background:var(--sky)"></span> <%= t.chip_a %></span>
+        <span class="float-chip fc-b"><span class="em" style="background:var(--royal)"></span> <%= t.chip_b %></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== STATS ==================== -->
+  <section class="stats">
+    <div class="wrap stats-in">
+      <div class="stat"><div class="num" data-count="<%= config.stats.products %>"><%= config.stats.products %></div><div class="lbl"><%= t.stat1 %></div></div>
+      <div class="stat stat-div"><div class="num" data-count="<%= config.stats.markets %>"><%= config.stats.markets %></div><div class="lbl"><%= t.stat2 %></div></div>
+      <div class="stat stat-div"><div class="num" data-count="<%= config.stats.corridors %>"><%= config.stats.corridors %></div><div class="lbl"><%= t.stat3 %></div></div>
+      <div class="stat stat-div"><div class="num" data-count="<%= config.stats.roles %>"><%= config.stats.roles %></div><div class="lbl"><%= t.stat4 %></div></div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY ==================== -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow"><%= t.why_eyebrow %></span>
+        <h2><%= t.why_title %></h2>
+        <p><%= t.why_sub %></p>
+      </div>
+      <div class="compare">
+        <div class="cmp cmp-bad reveal">
+          <h3><%= t.bad_title %></h3>
+          <div class="cmp-sub"><%= t.bad_sub %></div>
+          <div class="mini-box"><span class="m" style="height:14px"></span><span class="m" style="height:10px"></span></div>
+          <ul>
+            <li><span class="ic">✕</span> <%= t.bad1 %></li>
+            <li><span class="ic">✕</span> <%= t.bad2 %></li>
+            <li><span class="ic">✕</span> <%= t.bad3 %></li>
+          </ul>
+        </div>
+        <div class="cmp cmp-good reveal d1">
+          <h3><%= t.good_title %></h3>
+          <div class="cmp-sub"><%= t.good_sub %></div>
+          <div class="mini-box"><span class="m"></span><span class="m"></span><span class="m"></span><span class="m"></span></div>
+          <ul>
+            <li><span class="ic">✓</span> <%= t.good1 %></li>
+            <li><span class="ic">✓</span> <%= t.good2 %></li>
+            <li><span class="ic">✓</span> <%= t.good3 %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW ==================== -->
+  <section class="section alt" id="how">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow"><%= t.how_eyebrow %></span>
+        <h2><%= t.how_title %></h2>
+        <p><%= t.how_sub %></p>
+      </div>
+      <div class="steps">
+        <% var steps = [ [t.step1_t,t.step1_d], [t.step2_t,t.step2_d], [t.step3_t,t.step3_d], [t.step4_t,t.step4_d] ]; %>
+        <% steps.forEach(function(s, i){ %>
+          <div class="step reveal d<%= i+1 %>">
+            <div class="no"><%= '0' + (i+1) %></div>
+            <div class="s-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l3 3 5-6"></path></svg>
+            </div>
+            <h3><%= s[0] %></h3>
+            <p><%= s[1] %></p>
+            <% if (i < 3) { %><span class="connector"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span><% } %>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow"><%= t.feat_eyebrow %></span>
+        <h2><%= t.feat_title %></h2>
+        <p><%= t.feat_sub %></p>
+      </div>
+      <div class="grid3">
+        <% var feats = [ [t.f1_t,t.f1_d,'f-teal'], [t.f2_t,t.f2_d,'f-cobalt'], [t.f3_t,t.f3_d,'f-saf'], [t.f4_t,t.f4_d,'f-teal'], [t.f5_t,t.f5_d,'f-cobalt'], [t.f6_t,t.f6_d,'f-saf'] ]; %>
+        <% feats.forEach(function(f, i){ %>
+          <div class="feat reveal d<%= (i % 3) + 1 %>">
+            <div class="f-ic <%= f[2] %>">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"></rect><path d="M7 9h10M7 13h6"></path></svg>
+            </div>
+            <h3><%= f[0] %></h3>
+            <p><%= f[1] %></p>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHO ==================== -->
+  <section class="section alt" id="who">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow"><%= t.who_eyebrow %></span>
+        <h2><%= t.who_title %></h2>
+        <p><%= t.who_sub %></p>
+      </div>
+      <div class="roles">
+        <% var roles = [ ['E',t.role_ex_t,t.role_ex_d,'var(--feruza)'], ['I',t.role_im_t,t.role_im_d,'var(--lojuvard)'], ['L',t.role_lo_t,t.role_lo_d,'var(--zafaron)'], ['O',t.role_wh_t,t.role_wh_d,'var(--feruza-deep)'], ['El',t.role_em_t,t.role_em_d,'var(--royal)'], ['Op',t.role_ad_t,t.role_ad_d,'var(--navy)'] ]; %>
+        <% roles.forEach(function(r){ %>
+          <div class="role reveal">
+            <div class="r-ic" style="background:<%= r[3] %>"><%= r[0] %></div>
+            <div><h3><%= r[1] %></h3><p><%= r[2] %></p></div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUST ==================== -->
+  <section class="section">
+    <div class="wrap trust-wrap">
+      <div class="trust-card reveal">
+        <div class="seal">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        </div>
+        <h3><%= t.trust_card_t %></h3>
+        <p><%= t.trust_card_d %></p>
+      </div>
+      <div class="trust-points">
+        <% var tps = [ [t.tp1_t,t.tp1_d], [t.tp2_t,t.tp2_d], [t.tp3_t,t.tp3_d] ]; %>
+        <% tps.forEach(function(p, i){ %>
+          <div class="tp reveal d<%= i+1 %>">
+            <div class="tp-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg></div>
+            <div><h3><%= p[0] %></h3><p><%= p[1] %></p></div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DOWNLOAD ==================== -->
+  <section class="download" id="download">
+    <div class="tilebg"></div>
+    <div class="wrap dl-in">
+      <div class="dl-copy reveal">
+        <span class="eyebrow"><%= t.dl_eyebrow %></span>
+        <h2><%= t.dl_title %></h2>
+        <p><%= t.dl_sub %></p>
+        <div class="dl-btns">
+          <a class="store-btn" href="<%= config.androidUrl %>">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5l9-9 3 3-9 9a1.5 1.5 0 01-2.1 0l-.9-.9a1.5 1.5 0 010-2.1zM14 8l4-4 3 3-4 4z"></path></svg>
+            <span><small><%= t.dl_android_s %></small><b>Android APK</b></span>
+          </a>
+          <span class="store-btn soon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M16 2c0 1.7-1.3 3-3 3 .1-1.7 1.4-3 3-3zM19 17c-.6 1.4-1.3 2.7-2.4 2.7-1 .1-1.3-.6-2.5-.6s-1.6.6-2.5.6c-1.1 0-1.9-1.4-2.5-2.8-1.3-3-1.4-6.3.6-8 .9-.8 2-.9 2.9-.9 1 0 1.6.6 2.5.6.8 0 1.3-.6 2.5-.6.8 0 1.7.2 2.4.9-2.1 1.2-1.8 4.3.5 5.5z"></path></svg>
+            <span><small><%= t.dl_ios_s %></small><b>iOS</b></span>
+          </span>
+        </div>
+        <div class="dl-note"><%= t.dl_note %></div>
+      </div>
+      <div class="phone reveal d2">
+        <div class="screen">
+          <div class="ph-top"><span class="mk"></span> Silk Road</div>
+          <div class="ph-body">
+            <div><div class="ph-hi"><%= t.ph_hi %></div><div class="ph-name"><%= t.ph_name %></div></div>
+            <div class="ph-card"><b><%= t.ph_card_t %></b><br><span><%= t.ph_card_d %></span></div>
+            <div class="ph-grid">
+              <div class="ph-stat"><div class="v"><%= config.stats.products %></div><div class="l"><%= t.ph_s1 %></div></div>
+              <div class="ph-stat"><div class="v"><%= config.stats.markets %></div><div class="l"><%= t.ph_s2 %></div></div>
+              <div class="ph-stat"><div class="v"><%= config.stats.corridors %></div><div class="l"><%= t.ph_s3 %></div></div>
+              <div class="ph-stat"><div class="v"><%= config.stats.roles %></div><div class="l"><%= t.ph_s4 %></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LEAD ==================== -->
+  <section class="section lead-sec">
+    <div class="wrap">
+      <div class="lead-card reveal">
+        <div class="lead-copy">
+          <span class="eyebrow"><%= t.lead_eyebrow %></span>
+          <h2><%= t.lead_title %></h2>
+          <p><%= t.lead_sub %></p>
+        </div>
+        <form class="lead-form" id="leadForm"
+              data-msg-required="<%= t.lead_required %>"
+              data-msg-ok="<%= t.lead_ok %>"
+              data-msg-err="<%= t.lead_err %>">
+          <div class="lf-row">
+            <input type="text" name="name" placeholder="<%= t.lead_name %>" autocomplete="name">
+            <input type="tel" name="phone" placeholder="<%= t.lead_phone %>" autocomplete="tel">
+          </div>
+          <textarea name="message" rows="3" placeholder="<%= t.lead_msg %>"></textarea>
+          <button type="submit" class="btn btn-primary btn-lg"><%= t.lead_submit %></button>
+          <div class="lead-status" id="leadStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <a class="brand" href="/"><%- include('partials/logo', {sfx:'foot', theme:'dark', sub:true}) %></a>
+          <p><%= t.foot_tag %></p>
+        </div>
+        <div class="foot-col">
+          <h4><%= t.foot_c1 %></h4>
+          <a href="#how"><%= t.nav_how %></a>
+          <a href="#features"><%= t.nav_features %></a>
+          <a href="#who"><%= t.nav_who %></a>
+          <a href="/calculator"><%= t.nav_calc %></a>
+          <a href="<%= config.loginUrl %>"><%= t.nav_login %></a>
+        </div>
+        <div class="foot-col">
+          <h4><%= t.foot_c2 %></h4>
+          <a href="mailto:<%= config.contactEmail %>"><%= config.contactEmail %></a>
+          <a href="#download"><%= t.nav_download %></a>
+          <a href="#"><%= t.foot_gov %></a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <%= config.year %> Ipak Yo'li. <%= t.foot_rights %></span>
+        <span><%= t.foot_made %></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

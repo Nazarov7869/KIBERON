@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="<%= htmlLang %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= t.calc_page_title %></title>
+  <meta name="description" content="<%= t.calc_page_desc %>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="<%= homeHref %>"><%- include('partials/logo', {sfx:'nav', theme:'light', sub:false}) %></a>
+      <div class="nav-links" id="navLinks">
+        <a href="<%= homeHref %>"><%= t.calc_home %></a>
+      </div>
+      <div class="nav-right">
+        <div class="langs">
+          <% calcList.forEach(function(m){ %>
+            <a class="lang<%= m.code === lang ? ' active' : '' %>" href="<%= m.path %>">
+              <%- FLAGS[m.flag] %><span class="lb"><%= m.label %></span>
+            </a>
+          <% }); %>
+        </div>
+        <a class="btn btn-primary" href="<%= config.loginUrl %>"><%= t.nav_login %></a>
+        <button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== CALC HERO ==================== -->
+  <header class="calc-hero">
+    <div class="wrap">
+      <span class="eyebrow"><%= t.nav_calc %></span>
+      <h1><%= t.calc_h1 %></h1>
+      <p><b><%= t.calc_intro_b %></b> <%= t.calc_intro %></p>
+    </div>
+  </header>
+
+  <!-- ==================== CALC LAYOUT ==================== -->
+  <div class="wrap">
+    <div class="calc-layout" id="calc">
+
+      <!-- INPUTS -->
+      <div class="calc-form-col">
+        <div class="cur-tabs">
+          <button type="button" class="cur-btn active" data-cur="USD">$ USD</button>
+          <button type="button" class="cur-btn" data-cur="UZS">so'm</button>
+        </div>
+
+        <!-- Asosiy -->
+        <div class="c-sec">
+          <h3><%= t.calc_sec_basic %></h3>
+          <div class="c-grid2">
+            <div class="c-field"><label for="c-cost"><%= t.calc_cost %></label><input id="c-cost" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-qty"><%= t.calc_qty %></label><input id="c-qty" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-margin"><%= t.calc_margin %></label><input id="c-margin" type="number" inputmode="decimal" min="0" step="any" placeholder="20"></div>
+          </div>
+        </div>
+
+        <!-- Qo'shimcha -->
+        <div class="c-sec">
+          <h3><%= t.calc_sec_extra %></h3>
+          <div class="c-grid2">
+            <div class="c-field"><label for="c-packaging"><%= t.calc_packaging %></label><input id="c-packaging" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-waste"><%= t.calc_waste %></label><input id="c-waste" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-cert"><%= t.calc_cert %></label><input id="c-cert" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-inland"><%= t.calc_inland %></label><input id="c-inland" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+          </div>
+        </div>
+
+        <!-- Eksport -->
+        <div class="c-sec">
+          <h3><%= t.calc_sec_export %></h3>
+          <div class="hint"><%= t.calc_export_hint %></div>
+          <div class="c-grid2">
+            <div class="c-field"><label for="c-contcost"><%= t.calc_contcost %></label><input id="c-contcost" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-contcap"><%= t.calc_contcap %></label><input id="c-contcap" type="number" inputmode="decimal" min="0" step="any" placeholder="20000"></div>
+            <div class="c-field"><label for="c-insurance"><%= t.calc_insurance %></label><input id="c-insurance" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            <div class="c-field"><label for="c-commission"><%= t.calc_commission %></label><input id="c-commission" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+          </div>
+        </div>
+
+        <!-- Soliqlar -->
+        <div class="c-sec">
+          <h3><%= t.calc_sec_tax %></h3>
+          <div class="hint"><%= t.calc_tax_hint %></div>
+          <div class="c-field">
+            <label for="c-regime"><%= t.calc_regime %></label>
+            <select id="c-regime">
+              <option value="turnover_1"><%= t.calc_regime_t1 %></option>
+              <option value="turnover_4"><%= t.calc_regime_t4 %></option>
+              <option value="vat_15"><%= t.calc_regime_vat %></option>
+            </select>
+          </div>
+          <div class="c-grid2">
+            <div class="c-field"><label for="c-taxrate"><%= t.calc_taxrate %></label><input id="c-taxrate" type="number" inputmode="decimal" min="0" step="any" value="1"></div>
+            <div class="c-field"><label for="c-excise"><%= t.calc_excise %></label><input id="c-excise" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="calc-res-col">
+        <div class="res-empty" id="res-empty"><%= t.calc_empty %></div>
+
+        <div id="res-body" style="display:none">
+          <div class="r-head-cards">
+            <div class="r-hcard be">
+              <div class="t"><%= t.calc_breakeven %></div>
+              <div class="v" id="r-breakeven">—</div>
+              <div class="s"><%= t.calc_breakeven_sub %></div>
+            </div>
+            <div class="r-hcard rec">
+              <div class="t"><%= t.calc_recommended %></div>
+              <div class="v" id="r-recommended">—</div>
+              <div class="s" id="r-recommended-sub"><%= t.calc_perkg %></div>
+            </div>
+          </div>
+
+          <!-- Eksport bosqichlari -->
+          <div class="r-card" id="ladder-block" style="display:none">
+            <h4><%= t.calc_ladder_title %></h4>
+            <div class="r-row"><span class="lab"><%= t.calc_exw %></span><span class="val" id="r-exw">—</span></div>
+            <div class="r-row"><span class="lab"><%= t.calc_fob %></span><span class="val" id="r-fob">—</span></div>
+            <div class="r-row"><span class="lab"><%= t.calc_cfr %></span><span class="val" id="r-cfr">—</span></div>
+            <div class="r-row strong"><span class="lab"><%= t.calc_cif %></span><span class="val" id="r-cif">—</span></div>
+            <div class="r-row" id="commission-line" style="display:none"><span class="lab"><%= t.calc_commission_line %></span><span class="val" id="r-commission">—</span></div>
+          </div>
+
+          <!-- Konteyner to'ldirish foydasi -->
+          <div class="r-pool" id="pooling-block" style="display:none">
+            <h4><%= t.calc_pooling_title %></h4>
+            <div class="pr"><span><%= t.calc_solo %></span><b id="r-solo">—</b></div>
+            <div class="pr"><span><%= t.calc_pooled %></span><b id="r-pooled">—</b></div>
+            <div class="save" id="r-saving-line">—</div>
+          </div>
+
+          <!-- Soliqlar -->
+          <div class="r-card">
+            <h4><%= t.calc_tax_title %></h4>
+            <div class="r-row"><span class="lab"><%= t.calc_tax_vat_export %></span><span class="val pos"><%= t.calc_tax_vat_zero %></span></div>
+            <div class="r-row"><span class="lab"><%= t.calc_tax_pretax %></span><span class="val" id="r-tax-pretax">—</span></div>
+            <div class="r-row"><span class="lab" id="r-incometax-label"><%= t.calc_tax_turnover %></span><span class="val" id="r-incometax">—</span></div>
+            <div class="r-row" id="excise-row" style="display:none"><span class="lab"><%= t.calc_tax_excise_row %></span><span class="val" id="r-excise">—</span></div>
+            <div class="r-row strong"><span class="lab"><%= t.calc_tax_net %></span><span class="val" id="r-netprofit">—</span></div>
+            <div class="r-row"><span class="lab"><%= t.calc_tax_burden %></span><span class="val" id="r-burden">—</span></div>
+          </div>
+
+          <!-- Butun partiya -->
+          <div class="r-card">
+            <h4><%= t.calc_totals_title %></h4>
+            <div class="r-row"><span class="lab"><%= t.calc_total_cost %></span><span class="val" id="r-total-cost">—</span></div>
+            <div class="r-row pos"><span class="lab"><%= t.calc_total_profit %></span><span class="val" id="r-total-profit">—</span></div>
+            <div class="r-row" id="total-cif-row" style="display:none"><span class="lab"><%= t.calc_total_cif %></span><span class="val" id="r-total-cif">—</span></div>
+            <div class="r-row"><span class="lab"><%= t.calc_total_tax %></span><span class="val" id="r-total-tax">—</span></div>
+            <div class="r-row strong"><span class="lab"><%= t.calc_total_net %></span><span class="val" id="r-total-net">—</span></div>
+          </div>
+
+          <div class="calc-cta">
+            <span><%= t.calc_cta_note %></span>
+            <a class="btn btn-primary" href="<%= config.loginUrl %>"><%= t.nav_login %></a>
+          </div>
+        </div>
+
+        <!-- calc.js so'zlari (data-*) -->
+        <span id="results" style="display:none"
+              data-perkg="<%= t.calc_perkg %>"
+              data-profitword="<%= t.calc_profit_word %>"
+              data-savingword="<%= t.calc_saving %>"
+              data-totalword="<%= t.calc_total_word %>"
+              data-uzs="so'm"
+              data-turnovertax="<%= t.calc_tax_turnover %>"
+              data-profittax="<%= t.calc_tax_profit %>"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/js/calc.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
