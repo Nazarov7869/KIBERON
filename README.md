@@ -19,6 +19,22 @@ ombor, elchixona va AI yordamchisini bitta CRM ichida boshqarish.
 
 </div>
 
+<p align="center">
+
+<a href="https://ipakadmin.elektronbozor.uz/">
+<img src="https://img.shields.io/badge/🌐%20Live%20CRM-Online-success?style=for-the-badge">
+</a>
+
+<a href="https://ipakapi.elektronbozor.uz/docs">
+<img src="https://img.shields.io/badge/API-Swagger-blue?style=for-the-badge">
+</a>
+
+<a href="https://elektronbozor.uz">
+<img src="https://img.shields.io/badge/Website-Elektron%20Bozor-orange?style=for-the-badge">
+</a>
+
+</p>
+
 ---
 
 # 🖼 Interfeys
@@ -297,6 +313,4 @@ API kaliti admin paneldan kiritiladi.
 
 **Ipak Yo'li Milliy Agroeksport CRM**
 
-Jizzax viloyati hokimligi loyihasi
-
-2026
+KIBERON Jamoasi
