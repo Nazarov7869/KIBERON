@@ -59,11 +59,11 @@ ombor, elchixona va AI yordamchisini bitta CRM ichida boshqarish.
 
 <p align="center">
 
-<img src="assets/screenshots/mobil-login.png" width="180">
-<img src="assets/screenshots/mobil-dash.png" width="180">
-<img src="assets/screenshots/mobil-dash-1.png" width="180">
-<img src="assets/screenshots/mobil-dash-2.png" width="180">
-<img src="assets/screenshots/mobil-dash-3.png" width="180">
+<img src="assets/screenshots/mobil-login.jpg" width="180">
+<img src="assets/screenshots/mobil-dash.jpg" width="180">
+<img src="assets/screenshots/mobil-dash-1.jpg" width="180">
+<img src="assets/screenshots/mobil-dash-2.jpg" width="180">
+<img src="assets/screenshots/mobil-dash-3.jpg" width="180">
 
 </p>
 
@@ -298,4 +298,4 @@ API kaliti admin paneldan kiritiladi.
 
 Jizzax viloyati hokimligi loyihasi
 
-2025
+2026
