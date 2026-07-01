@@ -2,201 +2,166 @@
 
 # 🚀 KIBERON
 
-### Silk Road Logistics & Trading Platform
+### Ipak Yo'li platformasi uchun zamonaviy logistika va savdo boshqaruv tizimi
 
-Logistics • Export • Import • Smart Documents • Analytics
+Eksport • Import • Logistika • Ombor • Hujjatlar • Analitika
 
-<p>
+<br>
 
-<a href="https://YOUR_WEBSITE">
-<img src="https://img.shields.io/badge/🌐_Website-Visit-success?style=for-the-badge">
+<a href="https://saytingiz.uz">
+<img src="https://img.shields.io/badge/🌐_Rasmiy_Sayt-22C55E?style=for-the-badge">
 </a>
 
-<a href="https://YOUR_DEMO">
-<img src="https://img.shields.io/badge/🚀_Live_Demo-orange?style=for-the-badge">
-</a>
-
-<a href="https://YOUR_API_DOCS">
-<img src="https://img.shields.io/badge/API-Documentation-blue?style=for-the-badge">
+<a href="https://saytingiz.uz/docs">
+<img src="https://img.shields.io/badge/📚_API_Hujjatlari-0EA5E9?style=for-the-badge">
 </a>
 
 <a href="https://github.com/Nazarov7869/KIBERON">
-<img src="https://img.shields.io/github/stars/Nazarov7869/KIBERON?style=for-the-badge">
+<img src="https://img.shields.io/badge/💻_GitHub_Loyiha-181717?style=for-the-badge&logo=github">
 </a>
-
-</p>
-
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
-<img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white">
-<img src="https://img.shields.io/badge/Flet-4A90E2?style=flat-square">
-<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
 
 </div>
 
 ---
 
-# 📷 Preview
+# 📖 Loyiha haqida
 
-<p align="center">
+**KIBERON** — eksport va import jarayonlarini boshqarish, logistika xizmatlarini avtomatlashtirish hamda mijozlar bilan ishlashni yagona platformada birlashtiruvchi zamonaviy boshqaruv tizimi.
 
-<img src="images/dashboard.png" width="900">
+Loyiha korxonalar, logistika kompaniyalari va tadbirkorlar uchun ishlab chiqilgan bo'lib, barcha asosiy biznes jarayonlarini raqamlashtirishni maqsad qiladi.
 
-</p>
-
----
-
-# 🎬 Demo
-
-<p align="center">
-
-<img src="images/demo.gif">
-
-</p>
+Platforma yuqori tezlik, xavfsizlik va foydalanish qulayligini ta'minlash uchun **FastAPI** texnologiyasi asosida ishlab chiqilgan.
 
 ---
 
-# 📌 About Project
+# ✨ Asosiy imkoniyatlari
 
-**KIBERON** is a modern logistics and trading management platform designed for the **Silk Road ecosystem**.
-
-The platform helps exporters, importers, logistics companies, and administrators manage shipments, documents, warehouses, and payments in one centralized system.
-
-### Main Goals
-
-- 🚚 Logistics Management
-- 📦 Shipment Tracking
-- 📄 Document Management
-- 💳 Payment Monitoring
-- 👥 User Management
-- 📊 Analytics Dashboard
-- 🔔 Notifications
-- 🌍 Multi-platform Support
+* 🚚 Logistika jarayonlarini boshqarish
+* 📦 Buyurtmalarni kuzatish
+* 📄 Elektron hujjatlar bilan ishlash
+* 👤 Foydalanuvchilar va rollarni boshqarish
+* 🔐 JWT autentifikatsiyasi
+* 📊 Analitika va hisobotlar
+* 🔔 Bildirishnomalar
+* 📱 Mobil ilova bilan integratsiya
+* ⚡ REST API xizmatlari
 
 ---
 
-# ✨ Features
-
-| Feature | Description |
-|---------|-------------|
-| 🚚 Logistics | Shipment management |
-| 📦 Cargo Tracking | Real-time status |
-| 📄 Documents | Digital document storage |
-| 💳 Payments | Payment monitoring |
-| 👥 Users | Authentication & Roles |
-| 📊 Dashboard | Reports & Analytics |
-| 🔐 Security | JWT Authentication |
-| 📱 Mobile | Android/Desktop support |
-
----
-
-# 🛠 Tech Stack
-
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,github,vscode"/>
-
-</p>
+# 🛠 Texnologiyalar
 
 ### Backend
 
-- Python
-- FastAPI
-- SQLAlchemy
-- Alembic
-- JWT Authentication
+* Python
+* FastAPI
+* SQLAlchemy
+* Alembic
 
-### Database
+### Ma'lumotlar bazasi
 
-- PostgreSQL
-- SQLite
+* PostgreSQL
+* SQLite
 
-### Mobile
+### Mobil ilova
 
-- Flet
-- Python
+* Python
+* Flet
 
-### DevOps
+### Qo'shimcha vositalar
 
-- Docker
-- Git
-- GitHub
+* Git
+* GitHub
+* Docker
 
 ---
 
-# 🏗 Project Architecture
+# 🏗 Tizim arxitekturasi
 
-```
-                 Mobile App
-                      │
-                      │
-               REST API (FastAPI)
-                      │
-          ┌───────────┴───────────┐
-          │                       │
-      PostgreSQL            File Storage
-          │
-          │
-      Admin Dashboard
+```text
+            Mobil Ilova
+                 │
+                 ▼
+        FastAPI REST API
+                 │
+        ┌────────┴────────┐
+        ▼                 ▼
+ PostgreSQL         Fayllar xizmati
 ```
 
 ---
 
-# 📁 Project Structure
+# 📂 Loyiha tuzilishi
 
-```
+```text
 KIBERON/
 
-│
 ├── backend/
 │   ├── app/
-│   ├── routers/
+│   ├── api/
+│   ├── core/
+│   ├── database/
 │   ├── models/
+│   ├── routers/
 │   ├── schemas/
 │   ├── services/
 │   └── main.py
 │
 ├── mobile/
 │
-├── images/
-│   ├── dashboard.png
-│   ├── login.png
-│   ├── shipment.png
-│   └── demo.gif
-│
 ├── requirements.txt
+│
 └── README.md
 ```
 
 ---
 
-# 🚀 Installation
+# 🚀 Loyihani ishga tushirish
 
-## Clone Repository
+### 1. Loyihani yuklab olish
 
 ```bash
 git clone https://github.com/Nazarov7869/KIBERON.git
+```
 
+### 2. Loyiha papkasiga kirish
+
+```bash
 cd KIBERON
 ```
 
----
+### 3. Virtual muhit yaratish
 
-## Install Dependencies
+```bash
+python -m venv venv
+```
+
+### 4. Virtual muhitni faollashtirish
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+### 5. Kutubxonalarni o'rnatish
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Run Backend
+### 6. Serverni ishga tushirish
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-or
+yoki
 
 ```bash
 python main.py
@@ -204,13 +169,17 @@ python main.py
 
 ---
 
-## API Documentation
+# 📚 API hujjatlari
+
+Server ishga tushgandan so'ng:
+
+### Swagger UI
 
 ```
 http://localhost:8000/docs
 ```
 
-ReDoc
+### ReDoc
 
 ```
 http://localhost:8000/redoc
@@ -218,88 +187,53 @@ http://localhost:8000/redoc
 
 ---
 
-# 📸 Screenshots
+# 🔒 Xavfsizlik
 
-## Dashboard
+Loyiha quyidagi xavfsizlik mexanizmlaridan foydalanadi:
 
-<p align="center">
-
-<img src="images/dashboard.png">
-
-</p>
-
----
-
-## Login
-
-<p align="center">
-
-<img src="images/login.png">
-
-</p>
+* JWT Authentication
+* Password Hashing
+* Role Based Access
+* Token Validation
+* API Security
 
 ---
 
-## Shipment
+# 📌 Kelajakdagi rejalar
 
-<p align="center">
-
-<img src="images/shipment.png">
-
-</p>
-
----
-
-# 📈 GitHub Statistics
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Nazarov7869&show_icons=true&theme=tokyonight">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nazarov7869&layout=compact&theme=tokyonight">
-
-</p>
+* 🤖 Sun'iy intellekt yordamida tavsiyalar
+* 🌍 Ko'p tilli interfeys
+* 📱 Android va iOS ilovalari
+* 📈 Batafsil analitika
+* ☁️ Bulutli saqlash
+* 🔔 Real vaqt bildirishnomalari
 
 ---
 
-# 🤝 Contributing
+# 🤝 Hamkorlik
 
-Contributions are always welcome!
+Loyihani rivojlantirishda ishtirok etmoqchi bo'lsangiz:
 
-1. Fork the repository
-
-2. Create a new branch
-
-3. Commit your changes
-
-4. Push to your branch
-
-5. Open a Pull Request
+1. Repository'ni Fork qiling.
+2. Yangi Branch yarating.
+3. O'zgartirishlarni kiriting.
+4. Commit va Push qiling.
+5. Pull Request yuboring.
 
 ---
 
-# 📄 License
+# 📄 Litsenziya
 
-This project is licensed under the MIT License.
+Ushbu loyiha **MIT License** asosida tarqatiladi.
 
 ---
 
 <div align="center">
 
-# ⭐ Support This Project
+## ⭐ KIBERON loyihasini qo'llab-quvvatlang
 
-If you like this project, please consider giving it a ⭐ on GitHub.
+Agar loyiha sizga foydali bo'lgan bo'lsa, GitHub'da ⭐ **Star** bosishni unutmang.
 
-Made with ❤️ by **Nazarov**
-
-<br>
-
-<a href="https://YOUR_WEBSITE">
-<img src="https://img.shields.io/badge/Visit_Website-2ea44f?style=for-the-badge">
-</a>
-
-<a href="https://github.com/Nazarov7869">
-<img src="https://img.shields.io/badge/GitHub_Profile-181717?style=for-the-badge&logo=github">
-</a>
+### Made with ❤️ by Nazarov
 
 </div>
