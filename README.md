@@ -1,70 +1,37 @@
-
-<div align="center">
-
-# 🚀 KIBERON
-
-### Silk Road Logistics & Trading Platform
-
-Logistics • Export • Import • Smart Documents • Analytics
-
-<p>
-
-<a href="https://YOUR_WEBSITE">
-<img src="https://img.shields.io/badge/🌐_Website-Visit-success?style=for-the-badge">
-</a>
-
-<a href="https://YOUR_DEMO">
-<img src="https://img.shields.io/badge/🚀_Live_Demo-orange?style=for-the-badge">
-</a>
-
-<a href="https://YOUR_API_DOCS">
-<img src="https://img.shields.io/badge/API-Documentation-blue?style=for-the-badge">
-</a>
-
-<a href="https://github.com/Nazarov7869/KIBERON">
-<img src="https://img.shields.io/github/stars/Nazarov7869/KIBERON?style=for-the-badge">
-</a>
-
-</p>
-
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
-<img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white">
-<img src="https://img.shields.io/badge/Flet-4A90E2?style=flat-square">
-<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
-=======
 <p align="center">
 <img src="assets/banner.png" width="100%">
 </p>
 
 <h1 align="center">
-🚀 KIBERON
+🚀 IPAK YO'LI
 </h1>
 
+<h3 align="center">
+Milliy Agroeksport CRM Platformasi
+</h3>
+
 <p align="center">
 
-<b>Ipak Yo'li platformasi uchun logistika va savdo boshqaruv tizimi</b>
+Eksport • Import • Pooling • Logistika • AI • Xarita • Analitika
 
 </p>
 
 <p align="center">
 
-Eksport • Import • Logistika • Ombor • Analitika • Elektron Hujjatlar
-
-</p>
-
-<p align="center">
-
-<a href="https://saytingiz.uz">
-<img src="https://img.shields.io/badge/🌐_Rasmiy_Sayt-22c55e?style=for-the-badge">
+<a href="https://ipak.elektronbozor.uz">
+<img src="https://img.shields.io/badge/🌐_CRM-22c55e?style=for-the-badge">
 </a>
 
-<a href="https://saytingiz.uz/docs">
-<img src="https://img.shields.io/badge/📚_API_Documentation-0ea5e9?style=for-the-badge">
+<a href="https://ipakapi.elektronbozor.uz/docs">
+<img src="https://img.shields.io/badge/API_Swagger-0284c7?style=for-the-badge">
 </a>
 
-<a href="https://github.com/Nazarov7869/KIBERON">
-<img src="https://img.shields.io/badge/💻_GitHub-181717?style=for-the-badge&logo=github">
+<a href="https://elektronbozor.uz">
+<img src="https://img.shields.io/badge/Marketing_Web-f59e0b?style=for-the-badge">
+</a>
+
+<a href="https://github.com/USERNAME/ipak-yoli">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
 </a>
 
 </p>
@@ -73,470 +40,282 @@ Eksport • Import • Logistika • Ombor • Analitika • Elektron Hujjatlar
 
 # 📖 Loyiha haqida
 
-**KIBERON** — eksport, import va logistika jarayonlarini yagona platforma orqali boshqarishga mo'ljallangan zamonaviy axborot tizimi.
+**IPAK YO'LI** — O'zbekiston eksportyorlari, importyorlari, logistika kompaniyalari va davlat tashkilotlari uchun ishlab chiqilgan zamonaviy Agroeksport CRM platformasi.
 
-Loyiha logistika kompaniyalari, eksportyorlar, importyorlar va korxonalar uchun ishlab chiqilgan bo'lib, yuklarni boshqarish, buyurtmalarni kuzatish, elektron hujjatlar bilan ishlash va biznes jarayonlarini avtomatlashtirish imkonini beradi.
+Platforma eksport jarayonlarini raqamlashtirish, kichik korxonalarni pooling texnologiyasi orqali birlashtirish, logistika zanjirini boshqarish va AI yordamida qaror qabul qilishni osonlashtirish uchun ishlab chiqilgan.
 
-Backend qismi **FastAPI** asosida ishlab chiqilgan bo'lib, yuqori tezlik, xavfsizlik va kengaytirish imkoniyatlarini ta'minlaydi.
+Tizim uchta asosiy qismdan iborat:
+
+- ⚡ FastAPI Backend
+- 💻 React CRM
+- 🌐 Marketing Web
+
+Barchasi bitta loyiha ichida ishlaydi va bitta buyruq bilan ishga tushiriladi.
 
 ---
 
 # ✨ Asosiy imkoniyatlar
 
-| 🚚 Logistika | 📦 Buyurtmalar |
-|-------------|----------------|
-| Yuklarni boshqarish | Buyurtmalarni real vaqt rejimida kuzatish |
-
-| 📄 Elektron hujjatlar | 👤 Foydalanuvchilar |
-|----------------------|--------------------|
-| Hujjatlarni boshqarish | Rollar va ruxsatlar |
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
-
-| 🔐 Xavfsizlik | 📊 Analitika |
-|--------------|--------------|
-| JWT Authentication | Hisobotlar va statistika |
-
-| 📱 Mobil ilova | ⚡ REST API |
-|---------------|-------------|
-| Flet asosida | Yuqori unumdor API |
+| Modul | Tavsifi |
+|-------|---------|
+| 🚚 Logistika | Yuklarni boshqarish |
+| 📦 Pooling | Bir konteynerni birgalikda to'ldirish |
+| 💰 Escrow | Xavfsiz to'lov tizimi |
+| 👥 CRM | Eksportyor, Importyor, Ombor, Logistika, Elchixona va Admin |
+| 📈 Bozor tahlili | Candlestick narx grafigi |
+| 🗺️ Xarita | Sputnik xaritalari va marshrut |
+| 📄 Elektron hujjatlar | Hujjatlar bilan ishlash |
+| 🤖 AI Maslahatchi | OpenAI / Gemini / Claude |
+| 🔐 Xavfsizlik | JWT Authentication |
+| 📊 Dashboard | Real vaqt statistikasi |
 
 ---
 
-<<<<<<< HEAD
-# 📷 Preview
+# 🖥️ Platforma modullari
 
-<p align="center">
+### 🚀 Backend
 
-<img src="images/dashboard.png" width="900">
-
-</p>
-
----
-
-# 🎬 Demo
-
-<p align="center">
-
-<img src="images/demo.gif">
-
-</p>
-
----
-
-# 📌 About Project
-
-**KIBERON** is a modern logistics and trading management platform designed for the **Silk Road ecosystem**.
-
-The platform helps exporters, importers, logistics companies, and administrators manage shipments, documents, warehouses, and payments in one centralized system.
-
-### Main Goals
-
-- 🚚 Logistics Management
-- 📦 Shipment Tracking
-- 📄 Document Management
-- 💳 Payment Monitoring
-- 👥 User Management
-- 📊 Analytics Dashboard
-- 🔔 Notifications
-- 🌍 Multi-platform Support
-
----
-
-# ✨ Features
-
-| Feature | Description |
-|---------|-------------|
-| 🚚 Logistics | Shipment management |
-| 📦 Cargo Tracking | Real-time status |
-| 📄 Documents | Digital document storage |
-| 💳 Payments | Payment monitoring |
-| 👥 Users | Authentication & Roles |
-| 📊 Dashboard | Reports & Analytics |
-| 🔐 Security | JWT Authentication |
-| 📱 Mobile | Android/Desktop support |
-
----
-
-# 🛠 Tech Stack
-
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,github,vscode"/>
-
-</p>
-
-### Backend
-
-- Python
 - FastAPI
+- JWT Authentication
+- REST API
+- SQLite
 - SQLAlchemy
 - Alembic
-- JWT Authentication
-
-### Database
-
-- PostgreSQL
-- SQLite
-
-### Mobile
-
-- Flet
-- Python
-
-### DevOps
-
-- Docker
-- Git
-- GitHub
 
 ---
 
-# 🏗 Project Architecture
+### 💻 CRM
 
-```
-                 Mobile App
-                      │
-                      │
-               REST API (FastAPI)
-                      │
-          ┌───────────┴───────────┐
-          │                       │
-      PostgreSQL            File Storage
-          │
-          │
-      Admin Dashboard
-=======
+- React
+- Vite
+- Responsive UI
+- Dashboard
+- Charts
+
+---
+
+### 🌐 Marketing Web
+
+- Express.js
+- SEO
+- Landing Page
+
+---
+
 # 🛠 Texnologiyalar
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,github,vscode"/>
+<img src="https://skillicons.dev/icons?i=python,fastapi,react,vite,sqlite,docker,nodejs,git,github,vscode"/>
 
 </p>
 
-| Backend | Ma'lumotlar bazasi | Mobil ilova |
-|----------|-------------------|-------------|
-| Python | PostgreSQL | Flet |
-| FastAPI | SQLite | Python |
-| SQLAlchemy | Alembic | Android |
-
 ---
 
-# 🏗 Tizim arxitekturasi
+# 🏗 Arxitektura
 
-```text
-                   📱 Mobil ilova
-                          │
-                          ▼
-                 ⚡ FastAPI REST API
-                          │
-              ┌───────────┴───────────┐
-              ▼                       ▼
-        PostgreSQL             Fayllar xizmati
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
-```
+```mermaid
+graph TD
 
----
+A[React CRM]
 
-<<<<<<< HEAD
-# 📁 Project Structure
+B[Marketing Web]
 
-```
-KIBERON/
+C[FastAPI]
 
-│
-├── backend/
-│   ├── app/
-│   ├── routers/
-│   ├── models/
-=======
-# 📁 Loyiha tuzilishi
+D[SQLite]
 
-```text
-KIBERON/
+E[AI Advisor]
 
-├── assets/
-│   ├── banner.png
-│   ├── dashboard.png
-│   ├── login.png
-│   └── demo.gif
-│
-├── backend/
-│   ├── app/
-│   ├── api/
-│   ├── core/
-│   ├── database/
-│   ├── models/
-│   ├── routers/
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
-│   ├── schemas/
-│   ├── services/
-│   └── main.py
-│
-├── mobile/
-│
-<<<<<<< HEAD
-├── images/
-│   ├── dashboard.png
-│   ├── login.png
-│   ├── shipment.png
-│   └── demo.gif
-│
-├── requirements.txt
-=======
-├── requirements.txt
-│
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
-└── README.md
+F[Sputnik Maps]
+
+G[Escrow]
+
+A --> C
+
+B --> C
+
+C --> D
+
+C --> E
+
+C --> F
+
+C --> G
 ```
 
 ---
 
-<<<<<<< HEAD
-# 🚀 Installation
+# 📸 Tizim ko'rinishlari
 
-## Clone Repository
+## Dashboard
+
+<img src="assets/dashboard.png">
+
+---
+
+## Xarita
+
+<img src="assets/map.png">
+
+---
+
+## Bozor tahlili
+
+<img src="assets/market.png">
+
+---
+
+## Pooling
+
+<img src="assets/pooling.png">
+
+---
+
+# 🚀 Tez ishga tushirish
+
+## Windows
 
 ```bash
-git clone https://github.com/Nazarov7869/KIBERON.git
+start.bat
+```
 
-cd KIBERON
+## Linux
+
+```bash
+chmod +x start.sh
+
+./start.sh
 ```
 
 ---
 
-## Install Dependencies
-=======
-# 🚀 Loyihani ishga tushirish
-
-### 1️⃣ Repository'ni yuklab oling
+# ⚙️ O'rnatish
 
 ```bash
-git clone https://github.com/Nazarov7869/KIBERON.git
+git clone https://github.com/USERNAME/ipak-yoli.git
 ```
-
-### 2️⃣ Loyiha papkasiga kiring
 
 ```bash
-cd KIBERON
+cd ipak-yoli
 ```
-
-### 3️⃣ Virtual muhit yarating
-
-```bash
-python -m venv venv
-```
-
-### 4️⃣ Virtual muhitni faollashtiring
 
 Windows
 
 ```bash
-venv\Scripts\activate
+start.bat
 ```
 
-Linux / macOS
+Linux
 
 ```bash
-source venv/bin/activate
+./start.sh
 ```
 
-### 5️⃣ Kutubxonalarni o'rnating
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
+Skript avtomatik ravishda:
 
-```bash
-pip install -r requirements.txt
+- Virtual muhit yaratadi
+- Kutubxonalarni o'rnatadi
+- SQLite bazasini yaratadi
+- Demo ma'lumotlarni yuklaydi
+- Backend, CRM va Web qismlarini ishga tushiradi
+
+---
+
+# 🌍 Manzillar
+
+| Xizmat | URL |
+|---------|-----|
+| CRM | https://ipak.elektronbozor.uz |
+| API | https://ipakapi.elektronbozor.uz/docs |
+| Marketing | https://elektronbozor.uz |
+
+---
+
+# 🤖 AI Maslahatchi
+
+Platforma quyidagi AI provayderlarini qo'llab-quvvatlaydi.
+
+- OpenAI
+- Anthropic Claude
+- Google Gemini
+- Local LLM
+
+API kaliti Admin panel orqali kiritiladi.
+
+---
+
+# 👥 Rollar
+
+- 👑 Super Admin
+- 🏢 Eksportyor
+- 🌍 Importyor
+- 🚚 Logistika
+- 🏬 Ombor
+- 🏛 Elchixona
+
+---
+
+# 📁 Loyiha tuzilishi
+
+```text
+ipak-yoli/
+
+backend/
+
+frontend/
+
+web/
+
+assets/
+
+README.md
 ```
 
-<<<<<<< HEAD
 ---
 
-## Run Backend
-=======
-### 6️⃣ Serverni ishga tushiring
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
+# 🛣 Roadmap
 
-```bash
-uvicorn app.main:app --reload
-```
-
-<<<<<<< HEAD
-or
-=======
-yoki
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
-
-```bash
-python main.py
-```
-
----
-
-<<<<<<< HEAD
-## API Documentation
-=======
-# 📚 API Hujjatlari
-
-Swagger
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
-
-```
-http://localhost:8000/docs
-```
-
-ReDoc
-
-```
-http://localhost:8000/redoc
-```
-
----
-
-<<<<<<< HEAD
-# 📸 Screenshots
-
-## Dashboard
-
-<p align="center">
-
-<img src="images/dashboard.png">
-
-</p>
-
----
-
-## Login
-
-<p align="center">
-
-<img src="images/login.png">
-
-</p>
-
----
-
-## Shipment
-
-<p align="center">
-
-<img src="images/shipment.png">
-
-</p>
-
----
-
-# 📈 GitHub Statistics
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Nazarov7869&show_icons=true&theme=tokyonight">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nazarov7869&layout=compact&theme=tokyonight">
-
-</p>
-
----
-
-# 🤝 Contributing
-
-Contributions are always welcome!
-
-1. Fork the repository
-
-2. Create a new branch
-
-3. Commit your changes
-
-4. Push to your branch
-
-5. Open a Pull Request
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-=======
-# 🔒 Xavfsizlik
-
-- JWT Authentication
-- Parollarni Hashlash
-- Token Validatsiyasi
-- Rollarga asoslangan ruxsatlar
-- REST API himoyasi
-
----
-
-# 📌 Kelajakdagi rejalar
-
-- 🤖 Sun'iy intellekt yordamida tavsiyalar
-- 🌍 Ko'p tilli interfeys
-- 📱 Android va iOS ilovalari
-- ☁️ Cloud Storage
-- 📈 Batafsil analitika
-- 🔔 Real vaqt bildirishnomalari
+- ✅ CRM
+- ✅ Pooling
+- ✅ Escrow
+- ✅ AI Advisor
+- ✅ Market Analysis
+- ✅ Maps
+- 🚧 Android ilovasi
+- 🚧 iOS ilovasi
+- 🚧 Telegram Bot
+- 🚧 AI Forecast
+- 🚧 BI Dashboard
 
 ---
 
 # 🤝 Hamkorlik
 
-Loyihani rivojlantirishda ishtirok etishni istasangiz:
+Loyihani rivojlantirish uchun Pull Request yuborishingiz mumkin.
 
-- Repository'ni Fork qiling
-- Yangi Branch yarating
-- O'zgartirishlarni kiriting
-- Commit qiling
-- Pull Request yuboring
+1. Fork qiling.
+2. Branch yarating.
+3. Commit qiling.
+4. Push qiling.
+5. Pull Request yuboring.
 
 ---
 
 # 📄 Litsenziya
 
-Ushbu loyiha **MIT License** asosida tarqatiladi.
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
+MIT License
 
 ---
 
 <div align="center">
 
-<<<<<<< HEAD
-# ⭐ Support This Project
+## ⭐ IPAK YO'LI
 
-If you like this project, please consider giving it a ⭐ on GitHub.
+Agar loyiha sizga foydali bo'lgan bo'lsa GitHub'da ⭐ Star bosishni unutmang.
 
-Made with ❤️ by **Nazarov**
+Made with ❤️ in Uzbekistan
 
-<br>
-
-<a href="https://YOUR_WEBSITE">
-<img src="https://img.shields.io/badge/Visit_Website-2ea44f?style=for-the-badge">
-</a>
-
-<a href="https://github.com/Nazarov7869">
-<img src="https://img.shields.io/badge/GitHub_Profile-181717?style=for-the-badge&logo=github">
-</a>
+© 2025 Silk Road Export Intelligence Map
 
 </div>
-=======
-# ⭐ KIBERON
-
-Agar loyiha sizga foydali bo'lgan bo'lsa,
-
-GitHub'da ⭐ **Star** bosishni unutmang.
-
-<br>
-
-<a href="https://saytingiz.uz">
-<img src="https://img.shields.io/badge/🌐_Rasmiy_Sayt-22c55e?style=for-the-badge">
-</a>
-
-<a href="https://github.com/Nazarov7869">
-<img src="https://img.shields.io/badge/GitHub_Profil-181717?style=for-the-badge&logo=github">
-</a>
-
-<br><br>
-
-Made with ❤️ by **Nazarov**
-
-</div>
->>>>>>> 4f59d3937e63010c21b94ca84f8fc508d525d2f8
