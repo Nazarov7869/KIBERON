@@ -1,100 +1,113 @@
-<div align="center">
+<p align="center">
+<img src="assets/banner.png" width="100%">
+</p>
 
-# 🚀 KIBERON
+<h1 align="center">
+🚀 KIBERON
+</h1>
 
-### Ipak Yo'li platformasi uchun zamonaviy logistika va savdo boshqaruv tizimi
+<p align="center">
 
-Eksport • Import • Logistika • Ombor • Hujjatlar • Analitika
+<b>Ipak Yo'li platformasi uchun logistika va savdo boshqaruv tizimi</b>
 
-<br>
+</p>
+
+<p align="center">
+
+Eksport • Import • Logistika • Ombor • Analitika • Elektron Hujjatlar
+
+</p>
+
+<p align="center">
 
 <a href="https://saytingiz.uz">
-<img src="https://img.shields.io/badge/🌐_Rasmiy_Sayt-22C55E?style=for-the-badge">
+<img src="https://img.shields.io/badge/🌐_Rasmiy_Sayt-22c55e?style=for-the-badge">
 </a>
 
 <a href="https://saytingiz.uz/docs">
-<img src="https://img.shields.io/badge/📚_API_Hujjatlari-0EA5E9?style=for-the-badge">
+<img src="https://img.shields.io/badge/📚_API_Documentation-0ea5e9?style=for-the-badge">
 </a>
 
 <a href="https://github.com/Nazarov7869/KIBERON">
-<img src="https://img.shields.io/badge/💻_GitHub_Loyiha-181717?style=for-the-badge&logo=github">
+<img src="https://img.shields.io/badge/💻_GitHub-181717?style=for-the-badge&logo=github">
 </a>
 
-</div>
+</p>
 
 ---
 
 # 📖 Loyiha haqida
 
-**KIBERON** — eksport va import jarayonlarini boshqarish, logistika xizmatlarini avtomatlashtirish hamda mijozlar bilan ishlashni yagona platformada birlashtiruvchi zamonaviy boshqaruv tizimi.
+**KIBERON** — eksport, import va logistika jarayonlarini yagona platforma orqali boshqarishga mo'ljallangan zamonaviy axborot tizimi.
 
-Loyiha korxonalar, logistika kompaniyalari va tadbirkorlar uchun ishlab chiqilgan bo'lib, barcha asosiy biznes jarayonlarini raqamlashtirishni maqsad qiladi.
+Loyiha logistika kompaniyalari, eksportyorlar, importyorlar va korxonalar uchun ishlab chiqilgan bo'lib, yuklarni boshqarish, buyurtmalarni kuzatish, elektron hujjatlar bilan ishlash va biznes jarayonlarini avtomatlashtirish imkonini beradi.
 
-Platforma yuqori tezlik, xavfsizlik va foydalanish qulayligini ta'minlash uchun **FastAPI** texnologiyasi asosida ishlab chiqilgan.
+Backend qismi **FastAPI** asosida ishlab chiqilgan bo'lib, yuqori tezlik, xavfsizlik va kengaytirish imkoniyatlarini ta'minlaydi.
 
 ---
 
-# ✨ Asosiy imkoniyatlari
+# ✨ Asosiy imkoniyatlar
 
-* 🚚 Logistika jarayonlarini boshqarish
-* 📦 Buyurtmalarni kuzatish
-* 📄 Elektron hujjatlar bilan ishlash
-* 👤 Foydalanuvchilar va rollarni boshqarish
-* 🔐 JWT autentifikatsiyasi
-* 📊 Analitika va hisobotlar
-* 🔔 Bildirishnomalar
-* 📱 Mobil ilova bilan integratsiya
-* ⚡ REST API xizmatlari
+| 🚚 Logistika | 📦 Buyurtmalar |
+|-------------|----------------|
+| Yuklarni boshqarish | Buyurtmalarni real vaqt rejimida kuzatish |
+
+| 📄 Elektron hujjatlar | 👤 Foydalanuvchilar |
+|----------------------|--------------------|
+| Hujjatlarni boshqarish | Rollar va ruxsatlar |
+
+| 🔐 Xavfsizlik | 📊 Analitika |
+|--------------|--------------|
+| JWT Authentication | Hisobotlar va statistika |
+
+| 📱 Mobil ilova | ⚡ REST API |
+|---------------|-------------|
+| Flet asosida | Yuqori unumdor API |
 
 ---
 
 # 🛠 Texnologiyalar
 
-### Backend
+<p align="center">
 
-* Python
-* FastAPI
-* SQLAlchemy
-* Alembic
+<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,git,github,vscode"/>
 
-### Ma'lumotlar bazasi
+</p>
 
-* PostgreSQL
-* SQLite
-
-### Mobil ilova
-
-* Python
-* Flet
-
-### Qo'shimcha vositalar
-
-* Git
-* GitHub
-* Docker
+| Backend | Ma'lumotlar bazasi | Mobil ilova |
+|----------|-------------------|-------------|
+| Python | PostgreSQL | Flet |
+| FastAPI | SQLite | Python |
+| SQLAlchemy | Alembic | Android |
 
 ---
 
 # 🏗 Tizim arxitekturasi
 
 ```text
-            Mobil Ilova
-                 │
-                 ▼
-        FastAPI REST API
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
- PostgreSQL         Fayllar xizmati
+                   📱 Mobil ilova
+                          │
+                          ▼
+                 ⚡ FastAPI REST API
+                          │
+              ┌───────────┴───────────┐
+              ▼                       ▼
+        PostgreSQL             Fayllar xizmati
 ```
 
 ---
 
-# 📂 Loyiha tuzilishi
+# 📁 Loyiha tuzilishi
 
 ```text
 KIBERON/
 
+├── assets/
+│   ├── banner.png
+│   ├── dashboard.png
+│   ├── login.png
+│   └── demo.gif
+│
 ├── backend/
 │   ├── app/
 │   ├── api/
@@ -117,25 +130,25 @@ KIBERON/
 
 # 🚀 Loyihani ishga tushirish
 
-### 1. Loyihani yuklab olish
+### 1️⃣ Repository'ni yuklab oling
 
 ```bash
 git clone https://github.com/Nazarov7869/KIBERON.git
 ```
 
-### 2. Loyiha papkasiga kirish
+### 2️⃣ Loyiha papkasiga kiring
 
 ```bash
 cd KIBERON
 ```
 
-### 3. Virtual muhit yaratish
+### 3️⃣ Virtual muhit yarating
 
 ```bash
 python -m venv venv
 ```
 
-### 4. Virtual muhitni faollashtirish
+### 4️⃣ Virtual muhitni faollashtiring
 
 Windows
 
@@ -149,13 +162,13 @@ Linux / macOS
 source venv/bin/activate
 ```
 
-### 5. Kutubxonalarni o'rnatish
+### 5️⃣ Kutubxonalarni o'rnating
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Serverni ishga tushirish
+### 6️⃣ Serverni ishga tushiring
 
 ```bash
 uvicorn app.main:app --reload
@@ -169,17 +182,15 @@ python main.py
 
 ---
 
-# 📚 API hujjatlari
+# 📚 API Hujjatlari
 
-Server ishga tushgandan so'ng:
-
-### Swagger UI
+Swagger
 
 ```
 http://localhost:8000/docs
 ```
 
-### ReDoc
+ReDoc
 
 ```
 http://localhost:8000/redoc
@@ -189,36 +200,34 @@ http://localhost:8000/redoc
 
 # 🔒 Xavfsizlik
 
-Loyiha quyidagi xavfsizlik mexanizmlaridan foydalanadi:
-
-* JWT Authentication
-* Password Hashing
-* Role Based Access
-* Token Validation
-* API Security
+- JWT Authentication
+- Parollarni Hashlash
+- Token Validatsiyasi
+- Rollarga asoslangan ruxsatlar
+- REST API himoyasi
 
 ---
 
 # 📌 Kelajakdagi rejalar
 
-* 🤖 Sun'iy intellekt yordamida tavsiyalar
-* 🌍 Ko'p tilli interfeys
-* 📱 Android va iOS ilovalari
-* 📈 Batafsil analitika
-* ☁️ Bulutli saqlash
-* 🔔 Real vaqt bildirishnomalari
+- 🤖 Sun'iy intellekt yordamida tavsiyalar
+- 🌍 Ko'p tilli interfeys
+- 📱 Android va iOS ilovalari
+- ☁️ Cloud Storage
+- 📈 Batafsil analitika
+- 🔔 Real vaqt bildirishnomalari
 
 ---
 
 # 🤝 Hamkorlik
 
-Loyihani rivojlantirishda ishtirok etmoqchi bo'lsangiz:
+Loyihani rivojlantirishda ishtirok etishni istasangiz:
 
-1. Repository'ni Fork qiling.
-2. Yangi Branch yarating.
-3. O'zgartirishlarni kiriting.
-4. Commit va Push qiling.
-5. Pull Request yuboring.
+- Repository'ni Fork qiling
+- Yangi Branch yarating
+- O'zgartirishlarni kiriting
+- Commit qiling
+- Pull Request yuboring
 
 ---
 
@@ -230,10 +239,24 @@ Ushbu loyiha **MIT License** asosida tarqatiladi.
 
 <div align="center">
 
-## ⭐ KIBERON loyihasini qo'llab-quvvatlang
+# ⭐ KIBERON
 
-Agar loyiha sizga foydali bo'lgan bo'lsa, GitHub'da ⭐ **Star** bosishni unutmang.
+Agar loyiha sizga foydali bo'lgan bo'lsa,
 
-### Made with ❤️ by Nazarov
+GitHub'da ⭐ **Star** bosishni unutmang.
+
+<br>
+
+<a href="https://saytingiz.uz">
+<img src="https://img.shields.io/badge/🌐_Rasmiy_Sayt-22c55e?style=for-the-badge">
+</a>
+
+<a href="https://github.com/Nazarov7869">
+<img src="https://img.shields.io/badge/GitHub_Profil-181717?style=for-the-badge&logo=github">
+</a>
+
+<br><br>
+
+Made with ❤️ by **Nazarov**
 
 </div>
